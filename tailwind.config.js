@@ -12,7 +12,14 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      colors: {
+        "neumorphic-dark": "#1e1e1e",
+        "neumorphic-light": "#2a2a2a",
+      },
+      boxShadow: {
+        neumorphic: "3px 3px 16px #121212, -3px -3px 16px #fafafa50",
+      },
     },
   },
   plugins: [],
-};
+}
