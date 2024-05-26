@@ -36,11 +36,11 @@ export default function Home() {
   }
 
   return (
-    <div className="flex flex-col items-center justify-start min-h-screen text-white bg-slate-600">
+    <div className="flex flex-col items-center justify-start min-h-screen pt-20 text-white bg-slate-600">
       <img width="200" src="icon.png" alt="App Logo" />
-      <span className="text-3xl text-white">grabavid.com</span>
-      <h1 className="mt-12 text-4xl font-bold text-white">
-        YouTube Video Downloader
+      <span className="text-3xl font-bold text-white">grabavid.com</span>
+      <h1 className="mt-12 text-3xl text-white">
+        Free YouTube Video Downloader
       </h1>
       <form
         onSubmit={handleSubmit}
@@ -81,9 +81,9 @@ export default function Home() {
       )}
       {error && <p className="mt-4 text-red-500">{error}</p>}
       {downloadUrl && (
-        <p className="absolute flex items-center justify-center w-1/4 gap-1 p-2 mt-4 text-black bg-white rounded-lg h-1/4 top-1/4">
+        <p className="p-2 mt-4 text-black bg-white rounded-lg h-1/4 top-1/4">
           Downloaded! Grab your video {" "}
-          <a className="text-blue-600 underline" href={downloadUrl} download>
+          <a id="here" className="text-blue-600 underline" href={downloadUrl} download>
             here
           </a>
           
